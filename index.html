@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link id="load-css-0" rel="stylesheet" type="text/css" href="https://www.gstatic.com/charts/51/css/core/tooltip.css">
+    <link id="load-css-1" rel="stylesheet" type="text/css" href="https://www.gstatic.com/charts/51/css/util/util.css">
+    <script type="text/javascript" loading="lazy" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/loader.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_default_module.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_graphics_module.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_ui_module.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_gauge_module.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_corechart_module.js"><div></div></script>
+    <script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_fw_module.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/third_party/dygraphs/dygraph-tickers-combined.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/third_party/webfontloader/webfont.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_line_module.js"></script>
+</head>
+<body>
+    <div id="title">
+        CAVAS DE REFRIGERACIÓN
+    </div>
+    <div id="title2">
+        TEMPERATURAS
+    </div>
+    <div id="T1">
+        <div id="T2">
+            <div class="gauge" id="chart_Temp1"></div>
+            <div class="gauge" id="chart_Temp2"></div>
+            <div class="gauge" id="chart_Temp3"></div>
+            <div class="gauge" id="chart_Temp4"></div>
+        </div>
+    </div>
+    <div id="title2">
+        CLICK EN EL BOTON DE LA GRÁFICA A CONSULTAR
+    </div>
+    <div id="botones">
+        <button class="button" id="G1">Thermistor 1</button>
+        <button class="button" id="G2">Thermistor 2</button>
+        <button class="button" id="G3">Thermistor 3</button>
+        <button class="button" id="G4">Thermistor 4</button>
+    </div>
+    <div id="graf">
+        <div id="chartTime"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+            crossorigin="anonymous">
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script>
+        var firebaseConfig = {
+        apiKey: "AIzaSyCjLwHgSsOZX1lz1jBir3OSKN5pY0akeUs",
+        authDomain: "smartcool-5cc31.firebaseapp.com",
+        projectId: "smartcool-5cc31",
+        storageBucket: "smartcool-5cc31.appspot.com",
+        messagingSenderId: "464765976937",
+        appId: "1:464765976937:web:bd293f2e760dddf3fcfdf8"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
